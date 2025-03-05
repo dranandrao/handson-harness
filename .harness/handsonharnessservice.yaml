@@ -1,0 +1,5 @@
+service:
+  name: handsonharnessservice
+  identifier: handsonharnessservice
+  orgIdentifier: default
+  projectIdentifier: default_project
