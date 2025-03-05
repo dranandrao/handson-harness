@@ -44,6 +44,8 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+        delegateSelectors:
+          - helm-delegate
     - stage:
         name: chaostesting
         identifier: chaostesting
