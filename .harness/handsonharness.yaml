@@ -44,3 +44,19 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+    - stage:
+        name: chaostesting
+        identifier: chaostesting
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Chaos
+                  name: Chaos_1
+                  identifier: Chaos_1
+                  spec:
+                    experimentRef: chaos-experiment-1gk
+                    expectedResilienceScore: 50
+        tags: {}
